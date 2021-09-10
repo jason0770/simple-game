@@ -1,0 +1,23 @@
+@import "./utility";
+
+#grid {
+    display: none;
+    grid-template-columns: repeat(1fr, 7);
+    grid-template-rows: repeat(1fr, 7);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    $count: 1;
+
+    @for $i from 1 through 7 {
+        @for $j from 1 through 7 {
+            &__item-#{$count} {
+                @include item($j, $j + 1, $i,  $i + 1);
+            }
+            $count: $count + 1;
+        }
+    }
+
+}
+

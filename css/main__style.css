@@ -1,0 +1,40 @@
+.level__btn {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 5rem;
+}
+
+
+.level__btn:hover {
+    transform: scale(1.25);
+    background-color: white;
+    color: black;
+}
+
+#main__page {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+#main__page > div {
+    text-align: center;
+}
+
+#level__container {
+    display: flex;
+    flex-direction: column;
+}
+
+#row-1, #row-2, #row-3 {
+    display: flex;
+}
+
+.level__link {
+    text-decoration: none;
+}
